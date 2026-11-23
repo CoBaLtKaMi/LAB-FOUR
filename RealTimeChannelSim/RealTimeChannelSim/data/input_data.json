@@ -1,0 +1,34 @@
+{
+  "VariantName": "Промышленная сеть контроллеров",
+  "Channel": {
+    "BitRateBps": 1000000,
+    "PropagationDelayMs": 0.05,
+    "ProcessingDelayMs": 0.15
+  },
+  "Messages": [
+    {
+      "Name": "EmergencyStop",
+      "Priority": 1,
+      "SizeBits": 256,
+      "PeriodMs": 5.0
+    },
+    {
+      "Name": "ServoControl",
+      "Priority": 2,
+      "SizeBits": 1024,
+      "PeriodMs": 10.0
+    },
+    {
+      "Name": "SensorTelemetry",
+      "Priority": 3,
+      "SizeBits": 2048,
+      "PeriodMs": 20.0
+    },
+    {
+      "Name": "DiagnosticsLog",
+      "Priority": 4,
+      "SizeBits": 8192,
+      "PeriodMs": 50.0
+    }
+  ]
+}
